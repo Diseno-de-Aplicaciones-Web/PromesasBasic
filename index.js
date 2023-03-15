@@ -13,11 +13,11 @@ function callbackSeError(error) {
 
 function argumentoPromesa (resolve, reject) {
     setTimeout(()=>{
-        if ( Date.now()%2 === 0 )
+        if ( Math.random() > 0.5 )
             resolve("Estos son os datos")
         else
             reject("Errorrrrrr!")
-    }, 3000)
+    }, 1000)
 }
 
 function buscarInformacion() {
